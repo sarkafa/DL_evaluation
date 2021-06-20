@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Email</title>
     <style type="text/css">
+    
       body {
         margin: 0;
         background-color: #cccccc;
@@ -50,6 +51,11 @@
         color: #4a4a4a;
       }
 
+      .divider {
+        padding: 4px 0;
+        background-color: #293952;
+      }
+
       @media screen and (max-width: 600px) {
       }
       /* #eaf6fb */
@@ -59,53 +65,153 @@
     <center class="wrapper">
       <table class="table__main" align="center">
         <!-- HEADER -->
+
         <tr>
           <td>
+            <table width="100%">
+              <tr>
+                <td class="divider">
+                  <div></div>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                style="
+                    text-align: center;
+                    padding: 8px 0 4px;
+                    background-color: white;
+                    padding-bottom: 10px;">
+
+                <table width="200">
+                  <tr>
+                
+                <td >
+                  <a href="https://dataliteracy.vse.cz/"
+                    ><img style="padding-left: 20px;"
+                      src="https://db3pap004files.storage.live.com/y4mPqu79Zn-1Yb5BkUY2LLXQ_BQxgbgaAP0appimV6LwsCFrZy9It9Lr7DhWlF6O73v6W2WegPI8kTUjnioQgO1D8EyGsuVYfBMMwXY58_Xq0tBRXZDAxCCpIB2ujMHol1a0FsiA2CHS4oXZALjb1e2CkxdaIjCMCGQE7te0V6dA072aXq_QpBoKNP4XtQTmDtl?width=310&height=104&cropmode=none"
+                      width="200"
+                      alt=""
+                  /></a>
+                </td>
+              </tr> </table>
+              </td> 
+
+              <td style="text-align: center;
+              padding: 8px 0 4px;
+              background-color: white;
+              padding-bottom: 10px;">
+              <table width="400">
+                <tr>
+                <td
+                  style="
+                    text-align: left;
+                    padding: 8px 0 4px 40px;
+                    background-color: white;
+                    font-size: 36px;
+                    color: #293952;
+                  "
+                >
+                
+
+
+                  <strong> Data Literacy Result</strong>
+                </td>
+              </tr>
+            </table>
+            </td>
+            </tr> 
+            </table>
+            
+            <table width="100%">
+              <tr>
+                <td class="divider">
+                  <div></div>
+                </td>
+              </tr>
+            </table>
+
             <table width="100%">
               <tr>
                 <td
                   style="
                     text-align: center;
-                    padding: 8px 0 4px;
+                    padding: 20px 0px 20px 0px;
                     background-color: white;
-                    border-top: 5px solid #293952;
-                    border-bottom: 5px solid #293952;
+                    
                   "
                 >
-                  <a href="https://dataliteracy.vse.cz/"
-                    ><img
-                      src="https://db3pap004files.storage.live.com/y4m7oAF0OuswrPBK55oNAntGBBUMCW3nMXdfLnJbwEO_ZRz4gm9TmAtR1NXtWUg4SaafpG25fXQTf-jVUNpH13g2aM2hW-fiFNBZ6B9VtKX6tibdjjhXVTjoUj2Tya3DOG_BgSYY2F4UbKI1aZ9ZkCDKI06y154HJkGmFCy-Ciw9SZvLzbvIiy_-84CFBkMs0nh?width=573&height=227&cropmode=none"
-                      width="200"
-                      alt=""
-                  /></a>
+                  <table width="200" height="125" align="center">
+                    <tr>
+                      <td
+                        style="
+                          background-color: #404040;
+                          padding: 10px 0 10px 0;
+                          height: 100px;
+                          
+                          
+                          color: white;
+                          font-weight: bold;
+                          font-size: 20px;
+                      
+                        "
+                      >
+                        <p>Your total score</p>
+                        <p>{{total_score}} out of 100</p>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
+
                 <td
                   style="
                     text-align: center;
-                    padding: 8px 0 4px;
+                    padding: 20px 0 20px 0px;
                     background-color: white;
-                    border-top: 5px solid #293952;
-                    border-bottom: 5px solid #293952;
-                    font-size: 30px;
-                    color: #293952;
                   "
                 >
-                  <strong> Data Literacy Result</strong>
+                  <table width="400" height="125" align="center">
+                    <tr>
+                      <td
+                        style="
+                          background-color: white;
+                          padding: 10px 0px 10px 30px;
+                          height: 100px;
+                          margin: 20px;
+                          color: #404040;;
+                          font-size: 14px;
+                          text-align: left;
+                          line-height: 1.8rem;
+                        "
+                      >
+                        <div>
+                          <span>Email:</span>
+                          <span>{{email}}</span>
+                        </div>
+                        <div>
+                          <span>Date:</span>
+                          <span>{{submit_time}}</span>
+                        </div>
+                        <div>
+                          <span>Code:</span>
+                          <span>{{code}}</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
 
-            <!-- <table width="100%">
+            <table width="100%">
               <tr>
-                <td
-                  style="
-                    background-color: #f4f5f6;
-                    height: 100%;
-                    padding-top: 35px;
-                  "
-                ></td>
+                <td class="divider">
+                  <div></div>
+                </td>
               </tr>
-            </table> -->
+            </table>
 
             <table width="100%">
               <tr>
@@ -115,342 +221,25 @@
                     font-size: 12px;
                     line-height: 1.4rem;
                     /* border-top: 5px solid #293952; */
-                    padding: 20px 10px 20px 10px;
+                    padding: 20px 20px 20px 20px;
                     background-color: #ffffff;
-                  "
-                >
-                  <div>
-                    <span
-                      >The Data literacy assesment (DL) is an open research
-                      project created at Business University in Prague. In
-                      cooperation with industry professionals, DL has been
-                      developed to offer simple yet powerful ways to measure
-                      something never before measurable: An individual's data
-                      literacy level, by relating it to five traits linked to
-                      individual data literacy capability.</span
-                    >
-                  </div>
-                </td>
-              </tr>
-            </table>
-
-            <table width="100%">
-              <tr>
-                <td
-                  style="
                     text-align: left;
-                    padding: 5px 10px 5px 10px;
-                    font-size: 12px;
-                    line-height: 1.4rem;
-                    border-top: 5px solid #293952;
-                    background-color: white;
-                    color: #293952;
-                    font-size: 16px;
                   "
                 >
-                  <span style="font-weight: bold"> Data Literacy Report</span>
-                  <div style="font-size: 12px">
-                    As the horizontal line shows, your personal data literacy is
-                    currently
-                    <strong style="color: #0fd6b6">{{Score}}</strong>.
-                  </div>
-                  <img
-                    src="https://db3pap004files.storage.live.com/y4m9DPxSK0YeOuQxyrhABOQfRCQGXoUV3FcGasBvRljyz5rnZQuCQg1grrWtQs13Afvj5YpdPoqUg49Ejpr9PIPHaNTW8BufB5mXPHijSAfjN9zTCNFs68dLXn8dQQHbjDoFk7cyKlEogzVho0wLzuKgPLn3yB2Rg4LyagPPjpJAL5TBHc1wa9I28qKsYWSspxv?width=1000&height=500&cropmode=none"
-                    alt=""
-                    width="100%"
-                  />
                   <div
-                    style="
-                      color: grey;
-                      font-size: 6px;
-                      padding: 10px 0 10px 0;
-                      line-height: 0.6rem;
-                      text-align: center;
-                    "
+                    style="color: #293952; font-size: 16px; font-weight: bold"
                   >
-                    This is not a fixed level, anyone can grow their innovation
-                    mindset. Your BII level has been estimated using
-                    computational item response theory, based on the Berkeley
-                    Method for Entrepreneurship & Innovation, the Comfort Zone
-                    Scale, and fundamental testing methods in the field
-                    Psychology and Social Psychology.
+                    About Data Literacy
                   </div>
-                </td>
-              </tr>
-            </table>
-
-            <table width="100%">
-              <tr>
-                <td
-                  style="
-                    text-align: left;
-                    padding: 5px 10px 5px 10px;
-                    font-size: 12px;
-                    line-height: 1.4rem;
-                    border-top: 5px solid #293952;
-                    background-color: white;
-                    color: #293952;
-                    font-size: 12px;
-                  "
-                >
-                  <div style="font-weight: bold; font-size: 16px">
-                    Analysis and Recommendations
-                  </div>
-                  <div>
-                    The following is the analysis of your data literacy.
-                  </div>
-                  <div
-                    style="font-weight: bold; color: #0fd6b6; padding-top: 30px"
-                  >
-                    <span> A. DATA CONCEPTS, ETHICS AND PROTECTION</span>
-                  </div>
-                  <table width="100%">
-                    <tr>
-                      <td>
-                        <div>
-                          <ul style="list-style: none">
-                            <li>
-                              A1.1: Ability to understand the role of data is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              A1.2: Ability to understand basic characteristics
-                              of data
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              A1.3: Ability to understand basic concepts of data
-                              management
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              A1.4: Awareness of data ethics principles and
-                              legal limitations
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              A2.1: Ability to understand advanced
-                              characteristics of data
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              A2.2: Ability to understand advanced concepts of
-                              data management
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table widht="100%">
-                    <tr>
-                      <td>
-                        <div
-                          style="
-                            font-weight: bold;
-                            color: #0fd6b6;
-                            padding-top: 30px;
-                          "
-                        >
-                          <span> B. ANALYTICAL PRINCIPLES AND METHODS</span>
-                        </div>
-
-                        <div>
-                          <ul style="list-style: none">
-                            <li>
-                              B1.1: Knowledge of basic approach to
-                              problem-solving with data is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              B1.2: Ability to recognize elementary
-                              visualization techniques is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              B2.1: Knowledge of analytical methods used in
-                              business is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              B2.2: Knowledge of advanced visualization
-                              techniques is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table widht="100%">
-                    <tr>
-                      <td>
-                        <div
-                          style="
-                            font-weight: bold;
-                            color: #0fd6b6;
-                            padding-top: 30px;
-                          "
-                        >
-                          <span> C. Data collection and preparation</span>
-                        </div>
-
-                        <div>
-                          <ul style="list-style: none">
-                            <li>
-                              C1.1: Ability to identify relevant data sources
-                              for a given problem is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              C2.1: Ability to access data, to extract data and
-                              to store data in a required structure is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              C2.2: Ability to recognize data quality issues and
-                              to apply basic methods to clean data is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              C2.3: Ability to transform data into the target
-                              structure is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              C2.3: C2.4: Ability to create complex meta data is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table widht="100%">
-                    <tr>
-                      <td>
-                        <div
-                          style="
-                            font-weight: bold;
-                            color: #0fd6b6;
-                            padding-top: 30px;
-                          "
-                        >
-                          <span> D. Data analysis and evaluation</span>
-                        </div>
-
-                        <div>
-                          <ul style="list-style: none">
-                            <li>
-                              D1.1: Ability to apply basic analytical methods is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              D1.2: Ability to apply elementary visualization
-                              methods is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              D1.3: Ability to interpret basic graphs and tables
-                              is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              D2.1: Ability to apply analytical methods used in
-                              business is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              D2.2: Ability to create a simple dimensional model
-                              is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              D2.3: Ability to apply advanced visualization
-                              methods is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              D2.4: Ability to interpret more complex charts and
-                              models is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table widht="100%">
-                    <tr>
-                      <td>
-                        <div
-                          style="
-                            font-weight: bold;
-                            color: #0fd6b6;
-                            padding-top: 30px;
-                          "
-                        >
-                          <span>
-                            E. Data interpretation, communication and
-                            decision-making</span
-                          >
-                        </div>
-
-                        <div>
-                          <ul style="list-style: none">
-                            <li>
-                              E1.1: Ability to adapt the communication of data
-                              to the business problem and the expected audience
-                              is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              E1.2: Ability to clearly and coherently present
-                              arguments and analytical outcomes is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              E1.3: Ability to create insights is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              E1.4: Ability to make decisions based on data is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              E1.4: Ability to make decisions based on data is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              E1.5: Ability to adhere to data ethics and legal
-                              limitations is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              E2.1: Ability to create and articulate business
-                              story through the D&A results is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              E2.2: Ability to apply scenario analysis and to
-                              adjust decisions is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                            <li>
-                              E2.3: Ability to evaluate decisions based upon
-                              data is
-                              <strong style="color: #0fd6b6">{{Score}}</strong>.
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
+                  <p style="text-align: justify;">
+                    The Data literacy assesment (DL) is an open research project
+                    created at Business University in Prague. In cooperation
+                    with industry professionals, DL has been developed to offer
+                    simple yet powerful ways to measure something never before
+                    measurable: An individual's data literacy level, by relating
+                    it to five traits linked to individual data literacy
+                    capability.
+                  </p>
                 </td>
               </tr>
             </table>
@@ -460,7 +249,710 @@
                 <td
                   style="
                     text-align: center;
-                    padding: 5px 10px 5px 10px;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 0 20px 10px 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                  "
+                >
+                  <div
+                    style="color: #293952; font-size: 16px; font-weight: bold"
+                  >
+                    About Competencies
+                  </div>
+                  <p>
+                    Datal literacy methodology compose of five assessed levels:
+                    <ul>
+                      <li><b style="color: #0fb99d">Section A "Data concepts, ethics and protection"</b> evaluate respondents ability to understand the role, characterists of data and basic concepts of data management. This component also measure the awarness of data ethics principles and legal limitations.</li>
+
+                      <li><b style="color: #0fb99d">Section B "Analytical principles and methods"</b> evaluate knowledge of basic approach to problem-solving with data and ability to recognize visualization techniques. Knowledge of analytical methods used in business is also measured by this section.</li>
+
+                      <li><b style="color: #0fb99d">Section C "Data collection and preparation"</b> evaluate respondents ability to identify relevant data sources and ability to access, extract and store data. This section also measure ability to recognize data quality or transforming data to target structure.</li>
+
+                      <li><b style="color: #0fb99d">Section D "Data analysis and evaluation"</b> evaluate respondents ability to apply analytical and visualization methosd morover to interpret graps. This section also measure ability of dimensional modeling.</li>
+
+                      <li><b style="color: #0fb99d">Section E "Analytical principles and methods"</b> evaluate knowledge of basic approach to problem-solving with data and ability to recognize visualization techniques. Knowledge of analytical methods used in business is also measured by this section.</li>
+                      
+                    </ul>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td class="divider">
+                  <div></div>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 20px 20px 20px 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                  "
+                >
+                  <div
+                    style="color: #293952; font-size: 21px; font-weight: bold; padding-bottom: 10px;"
+                  >
+                   Your result overview
+                  </div>
+                  <div style="font-size: 12px">
+                    As the horizontal line shows, your personal data literacy is
+                    currently
+                    <strong style="color: #0fd6b6">{{total_score}} out of 100</strong>.
+                  </div>
+                  <img
+                    src="../graphs/{{graph}}.png"
+                    alt=""
+                    width="100%"
+                  />
+                  <div
+                    style="
+                      color: grey;
+                      font-size: 9px;
+                      padding: 10px 0 10px 0;
+                      line-height: 0.7rem;
+                      text-align: center;
+                    "
+                  >
+                    This is not a fixed level, anyone can grow their data literacy level. Your DL level has been estimated using methodology developed at the Faculty of Informatics at Prague Business university in Prague.
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td class="divider">
+                  <div></div>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 20px 20px 0 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                  "
+                >
+                  <div
+                    style="color: #293952; font-size: 21px; font-weight: bold; padding-bottom: 10px;"
+                  >
+                   Your detailed results
+                  </div>
+                  
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 20px 20px 0 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                  "
+                >
+                <table width="450"><tr><td>
+                  <div
+                    style="color: #0fb99d; font-size: 16px; font-weight: bold; "
+                  >
+                  Section A - Data concepts, ethiscs and protection
+                  </div>
+                    <div>
+                      <ul >
+                        <li>Ability to understand the role of data.</li>
+                        <li>Ability to understand basic characteristics of data.</li>
+                        <li>Ability to understand basic concepts of data management.</li>
+                        <li>Awareness of data ethics principles and legal limitations.</li>
+                        <li>Ability to understand advanced characteristics of data.</li>
+                      <li>Ability to understand advanced concepts of data management.</li>
+                      </ul>
+
+                    </div>
+                  </td>
+                
+                
+                </tr></table>
+                </td>
+                <td style="
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.4rem;
+                /* border-top: 5px solid #293952; */
+                padding: 0 20px 20px 20px;
+                background-color: #ffffff;
+                text-align: left;
+              ">
+                  <table width="150"><tr><td>
+                    <div height="100%" width="100%" style="border: solid #8e9aadf2 2px;border-radius: 10px; text-align: center; vertical-align: top; padding-top: 22px; padding-bottom: 10px; font-weight: bold; font-size: 16px; margin-right: 15px;">
+                    <span>Your score</span>
+                    <p>{{a_score}} out of 100</p>
+                  </div>
+                  </td></tr></table>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 5px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  What your score means
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 20px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  Recommendation
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 30px 20px 0 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                  "
+                >
+                <table width="450"><tr><td>
+                  <div
+                    style="color: #0fb99d; font-size: 16px; font-weight: bold; "
+                  >
+                  Section B - Analytical principles and methods
+                  </div>
+                    <div>
+                      <ul >
+                        <li>Knowledge of basic approach to problem-solving with data.</li>
+                        <li>Ability to recognize elementary visualization techniques.</li>
+                        <li>Knowledge of analytical methods used in business.</li>
+                        <li>Knowledge of advanced visualization techniques.</li>
+                        
+                      </ul>
+
+                    </div>
+                  </td>
+                
+                
+                </tr></table>
+                </td>
+                <td style="
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.4rem;
+                /* border-top: 5px solid #293952; */
+                padding: 20px 20px 0 20px;
+                background-color: #ffffff;
+                text-align: left;
+              ">
+                  <table width="150"><tr><td>
+                    <div height="100%" width="100%" style="border: solid #8e9aadf2 2px;border-radius: 10px; text-align: center; vertical-align: middle; padding-top: 22px; padding-bottom: 10px; font-weight: bold; font-size: 16px; margin-right: 15px;">
+                    <span>Your score</span>
+                    <p>{{b_score}} out of 100</p>
+                  </div>
+                  </td></tr></table>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 5px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  What your score means
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 20px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  Recommendation
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 30px 20px 0 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                  "
+                >
+                <table width="450"><tr><td>
+                  <div
+                    style="color: #0fb99d; font-size: 16px; font-weight: bold; "
+                  >
+                  Section C - Data collection and preparation
+                  </div>
+                    <div>
+                      <ul >
+                        <li>Ability to identify relevant data sources for a given problem.</li>
+                        <li>Ability to access data, to extract data and to store data in a required structure.</li>
+                        <li>Ability to recognize data quality issues and to apply basic methods to clean data.</li>
+                        <li>Ability to transform data into the target structure.</li>
+                        <li>Ability to create complex meta data.</li>
+                        
+                      </ul>
+
+                    </div>
+                  </td>
+                
+                
+                </tr></table>
+                </td>
+                <td style="
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.4rem;
+                /* border-top: 5px solid #293952; */
+                padding: 0 20px 20px 20px;
+                background-color: #ffffff;
+                text-align: left;
+              ">
+                  <table width="150"><tr><td>
+                    <div height="100%" width="100%" style="border: solid #8e9aadf2 2px;border-radius: 10px; text-align: center; vertical-align: top; padding-top: 22px; padding-bottom: 10px; font-weight: bold; font-size: 16px; margin-right: 15px;">
+                    <span>Your score</span>
+                    <p>{{c_score}} out of 100</p>
+                  </div>
+                  </td></tr></table>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 5px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  What your score means
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 20px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                    vertical-align: top;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  Recommendation
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 30px 20px 0 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                    vertical-align: top;
+                  "
+                >
+                <table width="450"><tr><td>
+                  <div
+                    style="color: #0fb99d; font-size: 16px; font-weight: bold; "
+                  >
+                  Section D - Data analysis and evaluation
+                  </div>
+                    <div>
+                      <ul >
+                        <li>Ability to apply basic analytical methods.</li>
+                        <li>Ability to apply elementary visualization methods.</li>
+                        <li>Ability to interpret basic graphs and tables.</li>
+                        <li>Ability to apply analytical methods used in business.</li>
+                        <li>Ability to create a simple dimensional model.</li>
+                        <li>Ability to apply advanced visualization methods.</li>
+                        <li>Ability to interpret more complex charts and models.</li>
+                        
+                      </ul>
+
+                    </div>
+                  </td>
+                
+                
+                </tr></table>
+                </td>
+                <td style="
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.4rem;
+                /* border-top: 5px solid #293952; */
+                padding: 20px 20px 0 20px;
+                background-color: #ffffff;
+                text-align: left;
+              ">
+                  <table width="150"><tr><td>
+                    <div height="100%" width="100%" style="border: solid #8e9aadf2 2px;border-radius: 10px; text-align: center; vertical-align: middle; padding-top: 22px; padding-bottom: 10px; font-weight: bold; font-size: 16px; margin-right: 15px;">
+                    <span>Your score</span>
+                    <p>{{d_score}} out of 100</p>
+                  </div>
+                  </td></tr></table>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 5px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  What your score means
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+            
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 20px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  Recommendation
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 30px 20px 0 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                  "
+                ><div
+                style="color: #0fb99d; font-size: 16px; font-weight: bold; "
+              >
+              Section E - Data interpretation, communication and decision-making
+              </div>
+                </td>
+                </tr>
+                </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 0px 20px 0 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                  "
+                >
+                <table width="450"><tr><td>
+                   <div>
+                      <ul >
+                        <li>Ability to apply basic analytical methods.</li>
+                        <li>Ability to apply elementary visualization methods.</li>
+                        <li>Ability to interpret basic graphs and tables.</li>
+                        <li>Ability to apply analytical methods used in business.</li>
+                        <li>Ability to create a simple dimensional model.</li>
+                        <li>Ability to apply advanced visualization methods.</li>
+                        <li>Ability to interpret more complex charts and models.</li>
+                        
+                      </ul>
+
+                    </div>
+                  </td>
+                
+                
+                </tr></table>
+                </td>
+                <td style="
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.4rem;
+                /* border-top: 5px solid #293952; */
+                padding: 20px 20px 0 20px;
+                background-color: #ffffff;
+                text-align: left;
+                vertical-align: top;
+              ">
+                  <table width="150"><tr><td>
+                    <div height="100%" width="100%" style="border: solid #8e9aadf2 2px;border-radius: 10px; text-align: center; vertical-align: middle; padding-top: 22px; padding-bottom: 10px; font-weight: bold; font-size: 16px; margin-right: 15px;">
+                    <span>Your score</span>
+                    <p>{{e_score}} out of 100</p>
+                  </div>
+                  </td></tr></table>
+                </td>
+              </tr>
+            </table>
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 5px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  What your score means
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+            
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.4rem;
+                    /* border-top: 5px solid #293952; */
+                    padding: 10px 20px 20px 42px;
+                    background-color: #ffffff;
+                    text-align: justify;
+                  "
+                >
+                
+                  <div
+                    style="color: #293952; font-size: 14px; font-weight: bold; ;"
+                  >
+                  Recommendation
+                  </div>
+                    <div>
+                      
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </div>
+                  </td>
+              </tr>
+            </table>
+
+
+            
+
+            
+
+           
+
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    padding: 20px 10px 5px 10px;
                     background-color: white;
                     border-top: 5px solid #293952;
                   "
@@ -484,27 +976,22 @@
                       alt=""
                   /></a>
                   <div
-                    style="color: grey; font-size: 7px; padding: 10px 0 10px 0"
+                    style="color: grey; font-size: 9px; padding: 10px 0 10px 0"
                   >
-                    Data literacy assessment was developed at Business School of
+                  
+                  <p>Copyright © 2021, Business Univerisity in Prague, All rights reserved.</p>
+                  <p>
+                    Our mailing address is:
+                    dataliteracy@vse.cz</p>
+                    <p>Data literacy assessment was developed at Business School of
                     Economics in Prague, nám. W. Churchilla 1938/4, 130 67
-                    Prague 3
+                    Prague 3</p>
                   </div>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
-
-        <!-- LOGO -->
-
-        <!-- BANNER IMAGE -->
-
-        <!-- TWO COLUMN SECTION -->
-
-        <!-- EMAIL LOGOS -->
-
-        <!-- FOOTER SECTION -->
       </table>
     </center>
   </body>
